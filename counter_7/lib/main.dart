@@ -127,13 +127,8 @@ class _MyHomePageState extends State<MyHomePage> {
         
       ),
       floatingActionButton: Row(
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          //Expanded(child: Container()),
-          FloatingActionButton(
-            onPressed: _incrementCounter,
-            tooltip: 'Increment',
-            child: const Icon(Icons.add),
-          ),
           if (_counter >= 1) ...{
             FloatingActionButton(
               onPressed: _decrementCounter,
@@ -141,7 +136,14 @@ class _MyHomePageState extends State<MyHomePage> {
               child: const Icon(Icons.remove),
             )
           },
-          
+          Expanded(
+            child: Container(),
+          ),
+          FloatingActionButton(
+            onPressed: _incrementCounter,
+            tooltip: 'Increment',
+            child: const Icon(Icons.add),
+          ),
         ],
       ),
     );

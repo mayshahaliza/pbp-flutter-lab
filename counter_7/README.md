@@ -25,17 +25,18 @@ TUGAS 7
 Jawab:
 1. - Stateless widget: tidak mempunyai state. Dapat berubah hanya oleh event eksterenal dalam parent widget dari widget tersebut. Child widget mendapatkan deskripsi dari parent widgetnya dan tidak dapat mengubahnya sendiri. Hanya mempunyai properti yang bersifat final.
    - Stateful widget: dapat mengubah deskripsi secara dinamis. Mempunyai company state class yang merepresentasikan state dari widget sekarang.
-2. 
+2. Floating action button (tombol + dan - untuk increment dan decrement), Container, Column, dan Row untuk penyesuaian letak widget, Text untuk menampilkan teks, dan Scaffold untuk mengimplementasikan struktur tata letak visual desain material dasar
 3. setState() digunakan saat mengganti internal state dari objek State (saat meng-update data model user interface). setState() digunakan untuk memberitahu framework jika internal state dari objek tersebut sudah berubah.
 4. - Final: digunakan untuk mendeklarasikan variabel yang immutable (tidak dapat diubah) yang nilai variabelnya sudah atau belum diketahui (nilai final diketahui saat run time)
    - Const: digunakan untuk mendeklarasikan variabel yang immutable yang nilai variabelnya sudah di-assign di awal (nilai const harus sudah diketahui saat compile time)
 5. - Create app (flutter create counter_7) dan membuka main.dart
 - Mengganti title di const MyHomePage menjadi Program Counter
-- Menambahkan floating action button - yang berfungsi untuk decrement
-- Jika bilangan berupa bilangan genap (termasuk 0), maka yang muncul adalah tulisan GENAP berwarna merah serta bilangan tersebut, jika bilangan berupa bilangan ganjil, maka tulisan berubah menjadi tulisan GANJIL berwarna biru serta bilangan itu sendiri
+- Menambahkan widget yakni floating action button - yang berfungsi untuk decrement dan + untuk increment. Button - di-set untuk hanya muncul jika counter lebih dari 0
+- Menyesuaikan tampilan tulisan ganjil dan genap sesuai dengan logika yang diminta (warna di-set dengan TextStyle)
 
 
 
 REFERENSI
 - https://alvinalexander.com/flutter/setState-method-explained/
 - https://api.flutter.dev/flutter/widgets/State/setState.html
+- https://codekey.id/dart/flutter-scaffold/
