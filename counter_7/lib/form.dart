@@ -153,6 +153,18 @@ class _MyFormPageState extends State<MyFormPage> {
           ),
         ),
       ),
+      //floatingActionButton: Container(
+//        child: TextButton(
+  //        child: Text(
+    //        "Simpan", style: TextStyle(color: Colors.white),
+      //    ),
+        //  style: ButtonStyle(
+          //    backgroundColor: MaterialStateProperty.all(Colors.blue)
+//          ),
+  //        onPressed: ,
+    //    ),
+      //  alignment: Alignment.bottomCenter,
+     // ),
     );
   }
 }
