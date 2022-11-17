@@ -34,9 +34,25 @@ Jawab:
     - Menambahkan widget yakni floating action button - yang berfungsi untuk decrement dan + untuk increment. Button - di-set untuk hanya muncul jika counter lebih dari 0
     - Menyesuaikan tampilan tulisan ganjil dan genap sesuai dengan logika yang diminta (warna di-set dengan TextStyle)
 
-
-
 REFERENSI
 - https://alvinalexander.com/flutter/setState-method-explained/
 - https://api.flutter.dev/flutter/widgets/State/setState.html
 - https://codekey.id/dart/flutter-scaffold/
+
+TUGAS 8
+1. Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement.
+2. Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+3. Sebutkan jenis-jenis event yang ada pada Flutter (contoh: onPressed).
+4. Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter.
+5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+
+Jawab:
+1. Navigator.push menambahkan page baru di atas navigation stack. Navigator.pushReplacement me-replace screen teratas pada stack dengan page yang baru.
+2. Container, Column, dan Row untuk penyesuaian letak widget, Text untuk menampilkan teks, dan Scaffold untuk mengimplementasikan struktur tata letak visual desain material dasar
+3. onPressed, onLongPress, onTap, onChanged, dsb.
+4. Navigator mengatur page mana yang akan ditampilkan serta mengatur pergantian/penambahan page. Struktur navigator berupa stack, di mana page teratas adalah yang muncul. Penggantian halaman dilakukan dengan pemanggilan Navigator.pushReplacement. Tidak seperti Navigator.push yang langsung menambahkan halaman baru di atas stack, Navigator.pushReplacement me-remove halaman teratas pada stack terlebih dahulu kemudian menambahkan halaman yang baru pada stack.
+5. - Menambahkan drawer dan membuat navigasi counter_7, tambah dan data budget di drawer serta menggunakan Navigator.pushReplacement untuk mengganti page
+    - Menambahkan halaman form, dengan string judul, int nominal, dan dropdown menu dengan Padding() dan button
+
+REFERENSI
+https://www.technicalfeeder.com/2021/11/flutter-page-transition/
