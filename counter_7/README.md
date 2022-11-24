@@ -67,6 +67,6 @@ Jawab:
 1. Bisa, tetapi mempunyai risiko variabelnya tidak terdeteksi dengan baik (identifikasi jenis yang salah, misal teridentifikasi sebagai string padahal bukan)
 2. Drawer (untuk berpindah-pindah page), FutureBuilder (untuk menampilkan data json yang di-fetch), Center dan Column untuk layout, dan ListTile untuk membuat clickable menu (pada drawer)
 3. Dibuat sebuah fungsi untuk melakukan fetch data json dari web (misal fetchToMyWatchList()). Kemudian fungsi tersebut akan me-return list data json yang telah di-fetch yang sudah dibuat menjadi object (Movie), yang akan ditampilkan pada page flutter.
-4. - Membuat folder page dan model, memindahkan form.dart ke folder page, membuat movie.dart dalam folder model, dan membuat mywatchlist.dart dalam folder page.
-- Mengambil data json tugas 3, kemudian meng-copy kode pada situs web quicktype sesuai data json untuk dijadikan model (di movie.dart)
-- Meng-import http dan membuat fungsi-fungsi yang diperlukan pada mywatchlist_page.dart, serta menambahkan ListTile my watchlist pada main.dart dan form.dart untuk memunculkan opsi pada drawer
+4.  - Membuat folder page dan model, memindahkan form.dart ke folder page, membuat movie.dart dalam folder model, dan membuat mywatchlist.dart dalam folder page.
+    - Mengambil data json tugas 3, kemudian meng-copy kode pada situs web quicktype sesuai data json untuk dijadikan model (di movie.dart)
+    - Meng-import http dan membuat fungsi-fungsi yang diperlukan pada mywatchlist_page.dart, serta menambahkan ListTile my watchlist pada main.dart dan form.dart untuk memunculkan opsi pada drawer
